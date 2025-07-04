@@ -14,7 +14,7 @@ public abstract class ExpirableProduct extends Product {
 
     @Override
     public boolean isExpired() {
-        return expiryDate.isBefore(LocalDate.now()); // Fixed: Correct expiry check
+        return expiryDate.isBefore(LocalDate.now()); 
     }
 
     @Override
