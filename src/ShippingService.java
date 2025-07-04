@@ -22,7 +22,7 @@ public class ShippingService {
         for(String item: counts.keySet()) {
             System.out.printf("%dx %s %.0f\n", counts.get(item), item, weights.get(item));
         }
-        
+
         System.out.printf("Total package weight %.1fkg\n", TotalWeight);
 
 
