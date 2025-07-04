@@ -12,7 +12,10 @@ public abstract class ExpirableProducts extends Product{
         return expiryDate;
     }
 
+    @Override
     public boolean isExpired() {
-        return expiryDate.before(new Date());
+        return expiryDate.after(new Date());
     }
+
+
 }
