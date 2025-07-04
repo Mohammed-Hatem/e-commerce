@@ -21,14 +21,17 @@ public abstract class Product {
         return quantity;
     }
 
-    public void increaseQuantity( int amount) {
-        quantity+=amount;
+    public void increaseQuantity(int amount) {
+        quantity += amount;
     }
-    public void decreaseQuantity( int amount) {
+
+    public void decreaseQuantity(int amount) {
         if (amount < 0 || amount > quantity) throw new IllegalArgumentException("Invalid quantity to decrease.");
         quantity -= amount;
     }
 
     public boolean isExpired() { return false; }
-
+    public boolean isShippable() { return false; }
+    public double getWeight() { return 0.0; }
+    public boolean canExpire() { return false; }
 }

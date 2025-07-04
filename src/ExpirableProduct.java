@@ -1,23 +1,24 @@
-import java.util.Date;
+import java.time.LocalDate;
 
-//implemented ExpirableProduct as a separate class inorder to avoid redundancy
+public abstract class ExpirableProduct extends Product {
+    private final LocalDate expiryDate;
 
-public abstract class ExpirableProduct extends Product{
-    private final Date expiryDate;
-
-    public ExpirableProduct(String name, double price, int quantity, Date expiryDate) {
+    public ExpirableProduct(String name, double price, int quantity, LocalDate expiryDate) {
         super(name, price, quantity);
         this.expiryDate = expiryDate;
     }
 
-    public Date getExpiryDate() {
+    public LocalDate getExpiryDate() {
         return expiryDate;
     }
 
     @Override
     public boolean isExpired() {
-        return expiryDate.after(new Date());
+        return expiryDate.isBefore(LocalDate.now()); // Fixed: Correct expiry check
     }
 
-
+    @Override
+    public boolean canExpire() {
+        return true;
+    }
 }
