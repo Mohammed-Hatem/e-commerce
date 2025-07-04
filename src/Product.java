@@ -1,9 +1,9 @@
 public abstract class Product {
     private final String name;
-    private final int price;
+    private final double price;
     private int quantity;
 
-    protected Product(String name, int price, int quantity) {
+    protected Product(String name, double price, int quantity) {
         this.name = name;
         this.price = price;
         this.quantity = quantity;
@@ -13,7 +13,7 @@ public abstract class Product {
         return name;
     }
 
-    public int getPrice() {
+    public double getPrice() {
         return price;
     }
 
@@ -28,5 +28,7 @@ public abstract class Product {
         if (amount < 0 || amount > quantity) throw new IllegalArgumentException("Invalid quantity to decrease.");
         quantity -= amount;
     }
+
+    public boolean isExpired() { return false; }
 
 }
