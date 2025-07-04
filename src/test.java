@@ -1,6 +1,6 @@
 import java.time.LocalDate;
 
-public class Main {
+public class test {
     public static void main(String[] args) {
 
         System.out.println("===== TEST 1: Valid Checkout =====");
