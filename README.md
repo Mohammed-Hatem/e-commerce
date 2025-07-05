@@ -44,10 +44,10 @@ e-commerce/
 
 # 🧠 Design Considerations
 
-    Immutable Product objects
+Immutable Product objects
 
-    CartItem composition for quantity tracking
+CartItem composition for quantity tracking
 
-    Separation of Invoice and Shipment logic
+Separation of Invoice and Shipment logic
 
-    Main method for simulation and testing
+Main method for simulation and testing
