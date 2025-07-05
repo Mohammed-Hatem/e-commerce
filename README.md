@@ -33,12 +33,12 @@ e-commerce/
 ---
 
 # 🔨 Compile
-javac -d out src/*.java
+    javac -d out src/*.java
 
 ---
 
 # ▶️ Run
-java -cp out Main
+    java -cp out Main
 
 ---
 
