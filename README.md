@@ -25,7 +25,7 @@ e-commerce/
 │   ├── Customer.java
 │   ├── Shipment.java
 │   ├── Invoice.java
-│   ├── Main.java     # Entry point
+│   ├── test.java     # Entry point
 │   └── ... 
 ├── out/             # Compiled class files (generated after build)
 └── README.md
