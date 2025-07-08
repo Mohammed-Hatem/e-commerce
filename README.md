@@ -7,8 +7,7 @@ A modular, object-oriented e-commerce system implemented in Java. This project d
 ## 🚀 Features
 
 - 📦 Product and Cart management with quantity support  
-- 🧾 Checkout system with invoice and shipment generation  
-- ⚖️ Realistic product weight calculations  
+- 🧾 Checkout system with invoice 
 - 💡 Emphasis on clean, maintainable OOP structure  
 - ✅ Includes validations and error handling for edge cases  
 
